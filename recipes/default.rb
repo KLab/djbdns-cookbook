@@ -20,7 +20,7 @@
 
 node.set[:djbdns][:service_type] = value_for_platform(
   ["debian","ubuntu"] => { "default" => "runit" },
-  "arch" => { "default" => "daemontools" },
+  ["arch","amazon"] => { "default" => "daemontools" },
   "default" => "bluepill"
 )
 
